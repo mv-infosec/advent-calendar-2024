@@ -1,9 +1,72 @@
-<!DOCTYPE html>
-<html>
-<meta charset="UTF-8" />
-<meta http-equiv="refresh" content="3; URL=https://mv-infosec.github.io/advent-calender-2023/" />
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<p>You will be re-directed to the webpage containing the information for this problem. If you are not redirected within 3 seconds, click <a href="URL=https://mv-infosec.github.io/advent-calender-2023/">here</a> to go to the problem page.</p>
+    <h1>Day 1: Welcome to the InfoSec Club's Advent Calendar 2024!</h1>
+    <p>Welcome! We have a message for you to decode, to welcome you of course!</p>
+    <script>
+        var div = document.createElement('div');
+        div.textContent = 'infoSecClub{\u0077\u0065\uD83C\uDDF1\uD83C\uDDE8\uD83C\uDDF4\uD83C\uDDF2\uD83C\uDDEA\uD83C\uDDF9\u006F\uD83C\uDDEE\uD83C\uDDF3\uD83C\uDDEB\uD83C\uDDF4\uD83C\uDDF8\uD83C\uDDEA\u0063\uD83C\uDDE6\uD83C\uDDE9\uD83C\uDDFB\uD83C\uDDEA\u006E\uD83C\uDDF9\uD83C\uDDE8\uD83C\uDDE6\uD83C\uDDF1\u0065\u006E\u0064\uD83C\uDDE6\uD83C\uDDF7\uD83C\uDDF9\uD83C\uDDFC\u0065\u006E\u0074\uD83C\uDDFE\uD83C\uDDF9\u0077\u0065\u006E\u0074\u0079\uD83C\uDDEB\uD83C\uDDF4\u0075\u0072}';
+        div.className = "cl";
+        document.body.appendChild(div);
+
+        twemoji.parse(document.body);
+
+        var imgs = div.querySelectorAll('img');
+        for (const img of imgs) {
+            // note the div is preserved
+            img.parentNode === div; // true
+
+            img.src;        // https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2764.png
+            img.alt;        // \u2764\uFE0F
+            img.className;  // emoji
+            img.draggable;  // false
+            img.height = 32;
+            img.width = 32;
+        }    
+    </script>
+    <style>
+        .cl{font-size: 150%}
+        .cl{font-size: 1.5rem}
+        .cl{font-size: 1.5em}
+        .cl{font-size: 40px}
+    </style>
+    
+    <details>
+        <summary>Hint 1</summary>
+        <p>What do the emojia mean?</p>
+    </details>
+    <details>
+        <summary>Hint 2</summary>
+        <p id="hint2_1">\uD83C\uDDF9\uD83C\uDDFC = <b>T</b>ai<b>W</b>an = <b>tw</b></p>
+    </details>
+    <script>
+        var div = document.getElementById('hint2_1');
+        div.textContent = '\uD83C\uDDF9\uD83C\uDDFC = Taiwan = tw';
+        twemoji.parse(document.body);
+
+        var imgs = div.querySelectorAll('img');
+        for (const img of imgs) {
+            // note the div is preserved
+            img.parentNode === div; // true
+
+            img.src;        // https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2764.png
+            img.alt;        // \u2764\uFE0F
+            img.className;  // emoji
+            img.draggable;  // false
+            img.height = 16;
+            img.width = 16;
+        }    
+    </script>
+    
+    <details>
+        <summary>Hint 3</summary>
+        <p>What is an <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1</a> code?</p>
+    </details>
 </body>
 </html>
