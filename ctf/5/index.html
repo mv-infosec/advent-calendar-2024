@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<title>Day 4: PDFs and Paswords</title>
+	<head>
+      <style>
+      	.box {
+        border: 5px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+      </style>
+      <a href="https://mv-infosec.github.io/advent-calendar-2024/ctf/">Problem Portal</a>
+    </head>
+    <body>
+        <h1>Day 5: Random or not?</h1>
+        <p>I used unhackable XOR one-time-pad, along with my favourite random number generator. What could go wrong?</p>
+        <a href="output.txt">Download result</a>
+      <pre><code class="language-py">import random, binascii
+
+FLAG = &quot;REDACTED&quot;
+
+outputs = [random.getrandbits(32) for _ in range(625)]
+
+result = []
+
+for char in FLAG:
+    result.append(ord(char) ^ random.getrandbits(8))
+
+print(outputs)
+print(result)
+</code></pre>
+        <details>
+            <summary>Hint 1</summary>
+            XOR cipher can be broken if you know what the values outputted by the random number generator.
+        </details>
+        <details>
+            <summary>Hint 2</summary>
+            <a href="https://docs.python.org/3/library/random.html">What random number generator does python use?</a>
+        </details>
+        <details>
+            <summary>Hint 3</summary>
+            How can you recover the state using tools online?
+        </details>
+        <p>Submit the solution in our Discord when finished.</p>
+    </body>
+</html>
