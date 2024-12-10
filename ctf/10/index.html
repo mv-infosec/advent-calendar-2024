@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<title>Day 10: Bullet Chess</title>
+	<head>
+      <style>
+      	.box {
+        border: 5px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+      </style>
+      <a href="https://mv-infosec.github.io/advent-calendar-2024/ctf/">Problem Portal</a>
+    </head>
+    <body>
+        <h1>Day 10: Bullet Chess</h1>
+	<h2><b>ENCLOSE THE RESULT IN infoSecClub{}, with all caps. For example: if your answer is Example, the flag is infoSecClub{EXAMPLE}</b></h2>
+        <p>Description: After discovering Trent's location, the officers turn to their favorite pastime, bullet chess. They use Real-Time Chess Protocol (RTCP) to play online. What opening do they play? Use only the name of the opening, which is one six-letter word. Omit words like "Accelerated" "Opening" "Gambit" "System" "Defense" "Queen's Pawn Opening" "King's Pawn Game"</p>
+	<p>Download network capture <a href="rtcp.pcapng"><b>here</b></a></p>
+	<p>Download Python program <a href="main.py"><b>here</b></a></p>
+        <details>
+            <summary>Hint 1</summary>
+            You can use Wireshark to open the pcapng
+        </details>
+        <details>
+            <summary>Hint 2</summary>
+            Where is the actual move encoded in the network capture?
+        </details>
+        <details>
+            <summary>Hint 3</summary>
+            d2d4 means moving the piece on square d2 to square d4. Squares are each given a name, according to these rules<br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/SCD_algebraic_notation.svg/756px-SCD_algebraic_notation.svg.png">
+            <br>By <a href="//commons.wikimedia.org/wiki/File:Chess_board_blank.svg" title="File:Chess board blank.svg">Chess_board_blank.svg</a>: *<a href="//commons.wikimedia.org/wiki/File:AAA_SVG_Chessboard_and_chess_pieces_04.svg" title="File:AAA SVG Chessboard and chess pieces 04.svg">AAA_SVG_Chessboard_and_chess_pieces_04.svg</a>: <a href="//commons.wikimedia.org/wiki/User:ILA-boy" title="User:ILA-boy">ILA-boy</a><a href="//commons.wikimedia.org/wiki/File:SCD_algebraic_notation.png" title="File:SCD algebraic notation.png">SCD_algebraic_notation.png</a>: <a href="//commons.wikimedia.org/w/index.php?title=User:Klin&amp;action=edit&amp;redlink=1" class="new" title="User:Klin (page does not exist)">Klin</a>derivative work: <a href="//commons.wikimedia.org/wiki/User:Beao" title="User:Beao">Bea</a><a href="//commons.wikimedia.org/wiki/User_talk:Beao" title="User talk:Beao">o</a><a href="//commons.wikimedia.org/wiki/File:SCD_algebraic_notation.png" title="File:SCD algebraic notation.png">SCD_algebraic_notation.png</a>: <a href="//commons.wikimedia.org/w/index.php?title=User:Klin&amp;action=edit&amp;redlink=1" class="new" title="User:Klin (page does not exist)">Klin</a>derivative work: <a href="//commons.wikimedia.org/wiki/User:Beao" title="User:Beao">Bea</a><a href="//commons.wikimedia.org/wiki/User_talk:Beao" title="User talk:Beao">o</a> - <a href="//commons.wikimedia.org/wiki/File:Chess_board_blank.svg" title="File:Chess board blank.svg">Chess_board_blank.svg</a><a href="//commons.wikimedia.org/wiki/File:SCD_algebraic_notation.png" title="File:SCD algebraic notation.png">SCD_algebraic_notation.png</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=9561169">Link</a>
+        </details>
+        <details>
+            <summary>Hint 4</summary>
+            Where is the actual move encoded in the network capture?
+        </details>
+        <details>
+            <summary>Hint 5</summary>
+            You can use <a href="https://www.chess.com/explorer">Chess.com</a> to enter your moves and find out the opening
+        </details>
+        <p>Submit the solution in our Discord when finished.</p>
+    </body>
+</html>
